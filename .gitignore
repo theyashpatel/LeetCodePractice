@@ -1,3 +1,7 @@
+### MY IGNORE
+.idea/
+### GITHUB TEMPLATE
+
 # Compiled class file
 *.class
 
