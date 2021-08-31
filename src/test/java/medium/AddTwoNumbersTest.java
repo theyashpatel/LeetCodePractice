@@ -1,4 +1,4 @@
-package hard;
+package medium;
 
 import medium.addtwonumbers.AddTwoNumbers;
 import medium.addtwonumbers.ListNode;
