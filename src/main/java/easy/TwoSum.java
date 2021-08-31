@@ -1,4 +1,4 @@
-package easy.TwoSum;
+package easy;
 
 import java.util.HashMap;
 import java.util.Map;
@@ -6,8 +6,8 @@ import java.util.Map;
 //    Given an array of integers nums and an integer target, return indices of the two numbers such that they add up to target.
 //    You may assume that each input would have exactly one solution, and you may not use the same element twice.
 //    You can return the answer in any order.
-//
-//    Look for test cases in test folder
+
+//    Link: https://leetcode.com/problems/two-sum/
 
 public class TwoSum {
     public int[] twoSum(int[] nums, int target) {
