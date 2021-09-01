@@ -29,7 +29,7 @@ public class LongestSubStringWithoutRepeatingCharactersTest {
     }
 
     @Test
-    public void longestSubStringTest() {
+    public void lengthOfLongestSubstringTest() {
         LongestSubStringWithoutRepeatingCharacters lss = new LongestSubStringWithoutRepeatingCharacters();
         Assert.assertEquals(output, lss.lengthOfLongestSubstring(s));
     }
