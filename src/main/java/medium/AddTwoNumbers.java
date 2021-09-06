@@ -1,4 +1,6 @@
-package medium.addtwonumbers;
+package medium;
+
+import helper.ListNode;
 
 //    You are given two non-empty linked lists representing two non-negative integers.
 //    The digits are stored in reverse order, and each of their nodes contains a single digit.
@@ -6,6 +8,8 @@ package medium.addtwonumbers;
 //    You may assume the two numbers do not contain any leading zero, except the number 0 itself.
 
 //    Link: https://leetcode.com/problems/add-two-numbers/
+
+
 /**
  * Definition for singly-linked list.
  * public class ListNode {

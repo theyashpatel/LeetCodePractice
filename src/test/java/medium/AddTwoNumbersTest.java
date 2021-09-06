@@ -1,7 +1,6 @@
 package medium;
 
-import medium.addtwonumbers.AddTwoNumbers;
-import medium.addtwonumbers.ListNode;
+import helper.ListNode;
 import org.junit.Assert;
 import org.junit.Test;
 import org.junit.runner.RunWith;

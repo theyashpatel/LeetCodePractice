@@ -1,10 +1,11 @@
-package easy.ReverseLinkedList;
+package easy;
 
 //    Given the head of a singly linked list, reverse the list, and return the reversed list.
 //    Link: https://leetcode.com/problems/reverse-linked-list/
 
+import helper.ListNode;
+
 import java.util.ArrayList;
-import java.util.List;
 
 /**
  * Definition for singly-linked list.
@@ -28,13 +29,5 @@ public class ReverseLinkedList {
             head = next;
         }
         return prev;
-    }
-
-    public String printList(ListNode head) {
-        ArrayList<Integer> nums = new ArrayList<>();
-        while (head != null) {
-            nums.add(head.val);
-        }
-        return nums.toString();
     }
 }

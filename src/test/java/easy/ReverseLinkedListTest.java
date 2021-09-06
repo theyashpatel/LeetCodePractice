@@ -1,7 +1,6 @@
 package easy;
 
-import easy.ReverseLinkedList.ListNode;
-import easy.ReverseLinkedList.ReverseLinkedList;
+import helper.ListNode;
 import org.junit.Assert;
 import org.junit.Test;
 import org.junit.runner.RunWith;
