@@ -1,9 +1,10 @@
-import medium.LongestPalindromicSubstring;
-import medium.addtwonumbers.ListNode;
+import easy.ReverseLinkedList.ListNode;
+import easy.ReverseLinkedList.ReverseLinkedList;
 
 public class Main {
   public static void main(String[] args) {
-    String s = "ab";
-    System.out.println(s.substring(0,1));
+    ListNode node = new ListNode(new int[]{1, 2, 3});
+    ListNode res = new ReverseLinkedList().reverseList(node);
+    System.out.println(res.toString());
   }
 }
