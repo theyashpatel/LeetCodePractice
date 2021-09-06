@@ -7,6 +7,15 @@ package easy;
 
 public class ReverseInteger {
     public int reverse(int x) {
-        return 321;
+        int reverse = 0;
+        int pop;
+        while (x != 0) {
+            if (reverse < Integer.MIN_VALUE / 10 || reverse > Integer.MAX_VALUE / 10) {
+                return 0;
+            }
+            reverse = (reverse * 10) + x % 10;
+            x /= 10;
+        }
+        return reverse;
     }
 }

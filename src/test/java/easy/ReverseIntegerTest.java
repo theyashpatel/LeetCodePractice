@@ -23,6 +23,9 @@ public class ReverseIntegerTest {
     public static Collection<Object[]> inputArgs() {
         List<Object[]> args = new ArrayList<>();
         args.add(new Object[]{123, 321});
+        args.add(new Object[]{-123, -321});
+        args.add(new Object[]{120, 21});
+        args.add(new Object[]{0, 0});
         return args;
     }
 
