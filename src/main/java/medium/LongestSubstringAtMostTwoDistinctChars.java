@@ -17,12 +17,13 @@ public class LongestSubstringAtMostTwoDistinctChars {
 
         while (right < str.length()) {
             Character rightChar = str.charAt(right);
-
+            Character leftChar = str.charAt(left);
             if (!map.containsKey(rightChar) && map.size() == 2) {
-                left = map.remove(str.charAt(left)) + 1;
-            }
-            else {
-                map.put(rightChar, right);
+                if (map.get(leftChar) == 1) map.remove(leftChar);
+                else map.put(leftChar, map.get(leftChar) - 1);
+                left++;
+            } else {
+                map.put(rightChar, map.get(rightChar) == null ? 1 : map.get(rightChar) + 1);
                 right++;
                 max = Math.max(max, right - left);
             }
@@ -31,3 +32,17 @@ public class LongestSubstringAtMostTwoDistinctChars {
         return max;
     }
 }
+
+
+//        while (right < str.length()) {
+//        Character rightChar = str.charAt(right);
+//
+//        if (!map.containsKey(rightChar) && map.size() == 2) {
+//        left = map.remove(str.charAt(left)) + 1;
+//        }
+//        else {
+//        map.put(rightChar, right);
+//        right++;
+//        max = Math.max(max, right - left);
+//        }
+//        }
