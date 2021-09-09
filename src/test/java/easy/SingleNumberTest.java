@@ -10,11 +10,11 @@ import java.util.Collection;
 import java.util.List;
 
 @RunWith(Parameterized.class)
-public class MaximumSubarrayTest {
+public class SingleNumberTest {
     private final int[] input;
     private final int output;
 
-    public MaximumSubarrayTest(int[] input, int output) {
+    public SingleNumberTest(int[] input, int output) {
         this.input = input;
         this.output = output;
     }
@@ -22,22 +22,15 @@ public class MaximumSubarrayTest {
     @Parameterized.Parameters
     public static Collection<Object[]> inputArgs() {
         List<Object[]> args = new ArrayList<>();
-        args.add(new Object[]{
-                new int[]{-2,1,-3,4,-1,2,1,-5,4}, 6
-        });
-        args.add(new Object[]{
-                new int[]{1}, 1
-        });
-        args.add(new Object[]{
-                new int[]{5,4,-1,7,8}, 23
-        });
-
+        args.add(new Object[]{new int[]{2, 2, 1}, 1});
+        args.add(new Object[]{new int[]{4,1,2,1,2}, 4});
+        args.add(new Object[]{new int[]{1}, 1});
         return args;
     }
 
     @Test
-    public void lengthOfLongestSubstringTest() {
-        MaximumSubarray ms = new MaximumSubarray();
-        Assert.assertEquals(output, ms.maxSubArray(input));
+    public void isValidTest() {
+        SingleNumber sn = new SingleNumber();
+        Assert.assertEquals(output, sn.singleNumber(input));
     }
 }
